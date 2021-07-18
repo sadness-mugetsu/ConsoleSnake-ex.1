@@ -11,18 +11,7 @@ namespace snake_example_1
         static void Main(string[] args)
         {
             Console.CursorVisible = false;
-
-            //Generation gaming field
-            FieldsGeneration.DrawingGamingField();
-
-            //Random food generation
-            FoodGeneration.RandomFoodGeneration();
-
-            //Random snake generation 
-            SnakeGeneration.RandomSnakeGeneration();
-
-            //Snake movements
-            SnakeMovements.MovementsSnake();
+            
         }
     }
 }

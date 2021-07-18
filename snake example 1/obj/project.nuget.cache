@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v8ibfiVSmpQJtc3tQIiglx0onWprGkfMoqi0j00StSbCSk+K4hdI/4ylqW4pnMCcfRVxN14dtqNg7sPPXJgzjg==",
+  "dgSpecHash": "fHp5stUiURu2hHOdimWZj6oPYvVMlPB9ec1KS/wIEK0CWXiGnLN7a450aicQmLF1SIrbc9938eMdsNEX7wDJ+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ichig\\source\\repos\\snake example 1\\snake example 1\\snake example 1.csproj",
+  "projectFilePath": "C:\\Users\\ichig\\source\\repos\\ConsoleSnake-ex.1\\snake example 1\\snake example 1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

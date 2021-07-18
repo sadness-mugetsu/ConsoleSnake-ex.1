@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ichig\\source\\repos\\snake example 1\\snake example 1\\snake example 1.csproj",
+      "projectUniqueName": "C:\\Users\\ichig\\source\\repos\\ConsoleSnake-ex.1\\snake example 1\\snake example 1.csproj",
       "projectName": "snake example 1",
-      "projectPath": "C:\\Users\\ichig\\source\\repos\\snake example 1\\snake example 1\\snake example 1.csproj",
+      "projectPath": "C:\\Users\\ichig\\source\\repos\\ConsoleSnake-ex.1\\snake example 1\\snake example 1.csproj",
       "packagesPath": "C:\\Users\\ichig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ichig\\source\\repos\\snake example 1\\snake example 1\\obj\\",
+      "outputPath": "C:\\Users\\ichig\\source\\repos\\ConsoleSnake-ex.1\\snake example 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ichig\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
