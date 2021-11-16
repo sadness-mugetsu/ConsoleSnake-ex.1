@@ -16,13 +16,13 @@ namespace snake_example_1
             FieldsGeneration.DrawingGamingField();
 
             //Random food generation
-            FoodGeneration.RandomFoodGeneration();
+          //  FoodGeneration.RandomFoodGeneration();
 
             //Random snake generation 
-            SnakeGeneration.RandomSnakeGeneration();
+            //SnakeGeneration.RandomSnakeGeneration();
 
             //Snake movements
-            SnakeMovements.MovementsSnake();
+            //SnakeMovements.MovementsSnake();
         }
     }
 }

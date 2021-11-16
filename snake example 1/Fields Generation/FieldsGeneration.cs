@@ -6,34 +6,38 @@ namespace snake_example_1.Fields_Generation
 {
     public class FieldsGeneration
     {
-        public static void DrawingGamingField(int PointCount = 90)
+        public static void DrawingGamingField(int quantityPointsX = 40)
         {
-            char Point = '#';
+            char point = '#';
+            int quantityPointsY = quantityPointsX / 3;
 
-            int DrawingY = PointCount / 3;
+            int x = 0;
+            int y = 0;
 
-            //Cycle for upper generation X
-            for (int i = 0; i < PointCount; i++)
+            Action upperWall = delegate { Console.SetCursorPosition(x++, 0); Console.Write(point); };
+            
+            Action leftWall = delegate { Console.SetCursorPosition(0, y++); Console.WriteLine(point); };
+
+            Action downWall = delegate { Console.SetCursorPosition(x++ - 40, y); Console.Write(point); };
+
+            Action rightWall = delegate { Console.SetCursorPosition(x - 40, y++ - 12); Console.WriteLine(point); };
+
+            Tuple<int, Action>[] tuple =
             {
-                Console.Write(Point);
-            }
-            //Cycle for left generation Y
-            for (int i = 0; i < DrawingY; i++)
+                new Tuple<int, Action>(quantityPointsX, upperWall), new Tuple<int, Action>(quantityPointsY, leftWall),
+                new Tuple<int, Action>(quantityPointsX, downWall), new Tuple<int, Action>(quantityPointsY + 1, rightWall)
+            };
+
+            for (int i = 0, i2 = 0; i < 4;)
             {
-                Console.SetCursorPosition(0, i);
-                Console.WriteLine(Point);
-            }
-            //Cycle for lower generation X
-            for (int i = 0; i < PointCount; i++)
-            {
-                Console.SetCursorPosition(i, DrawingY);
-                Console.Write(Point);
-            }
-            //Cycle for right generation Y
-            for (int i = 0; i < DrawingY + 1; i++)
-            {
-                Console.SetCursorPosition(PointCount, i);
-                Console.WriteLine(Point);
+                if (i2 != tuple[i].Item1)
+                    tuple[i].Item2.Invoke();
+                else if (i2 == tuple[i].Item1)
+                {
+                    i++;
+                    i2 = 0;
+                }
+                i2++;
             }
         }
     }
